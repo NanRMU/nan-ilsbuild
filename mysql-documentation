@@ -1,0 +1,18 @@
+"Help- MySQL is Bullying Me" or "A Compilation of Small Errors I Often Made in MySQL and What to do About Them"
+
+Firstly, when I say "error," I mean both error codes and little things that aren't technically errors. Just tiny things that stumped me for a bit. 
+Secondly, I wrong this all out and formatted after, apologies for how that error will inevitably show up. Just like with MySQL, I love Markdown, but Markdown does not love me. 
+
+
+For reference, this is what we're working with:
+![A screenshot displaying a CLI with the MySQL welcome screen; for the purposes of showing versions used. MySQL version displayed is 8.0.45 on Ubuntu 22.04.1](https://github.com/images/Hendricks_screenshot_gCloud_MySQL.png)
+
+1. You are way too excited to get started-- The 1046 Error.
+MySQL is a little Matryoshka doll of a program. If you're missing the first doll, how can you expect to access the others? That's how I rationalize the 1046 error. Sometimes you just get way too excited about your assignment, or it's been a minute since you've looked at it, and the simplest things turn into your biggest hurdles. 
+![A screenshot highlighting the MySQL 1046 error. The error itself reads: "ERROR 1046 (AD000): No database selected"](https://github.com/images/Hendricks_screenshot_gCloud_MySQL1046.png)
+
+Thankfully it's an easy enough fix, just select your database with "use [database name]". 
+![A screenshot showing the the successful change in database and proof by inserting items into a table within that database.](https://github.com/images/Hendricks_screenshot_gCloud_MySQL1046fix.png)
+
+2. What do those mean?-- The continues
+MySQL requires a very specific language that's pretty different from what I, and probably you (not you Dr. R) are used to. Messing up that language can be stressful. If you're like me, it might have your screen looking like this, 
